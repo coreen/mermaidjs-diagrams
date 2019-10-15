@@ -1,0 +1,13 @@
+sequenceDiagram
+  Client->>Server: GET /businesses
+  Server->>Store (MongoDB): businesses.findAll()
+  Store (MongoDB)->>Server: raw database rows
+  Server->>Client: return limited results
+
+  loop WhileHaveMore
+    Client->>Server: next page
+    Server->>Client: return next page results
+  end
+
+  Note left of Client: either infinite scroll <br/> or paginated calls
+

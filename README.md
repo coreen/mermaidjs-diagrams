@@ -11,3 +11,9 @@ The most common use case I have for using this editor is the sequence diagram. T
 #### Graphs
 
 If you want to show a graph-style diagram with groupings, use the flowchart type of diagraming style. More can be read on that [here](https://mermaidjs.github.io/#/flowchart).
+
+
+### Table of Contents
+
+- endpoint-polling.txt
+	- polling interactions between client and server, with backing MongoDB store
